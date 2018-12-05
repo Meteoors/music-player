@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_939467_i746mpcq0d.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class='cover'></div>
+    <div class='container'>
+        <section class='content'>
+            <div class='left'>
+                <header class='title'>
+                    <div class='name'>歌曲</div>
+                    <div class='info'>
+                        <div class='singer'>歌手</div>
+                        <div class='time'>时长</div>
+                    </div>
+                </header>
+                <ul class='list' id='list'></ul>
+            </div>
+
+            <div class='right'>
+                <h3 id='songName'></h3>
+                <div class='lrc_wrapper'>
+                    <ul id='lrc' class='lrc'>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class='control'>
+            <audio id='audio'></audio>
+            <div class='left'>
+                <i id='prev' class='iconfont icon-prev' title='上一首'></i>
+                <i id='play' class='iconfont icon-pause' title='播放/暂停'></i>
+                <i id='next' class='iconfont icon-next' title='下一首'></i>
+            </div>
+            <div class='progress'>
+                <span id='current_time'>00:00</span>
+                <div id='progress_wrapper' class='range_wrapper'>
+                    <div id='range' class='range'>
+                        <div id='circle' class='circle'></div>
+                    </div>
+                    
+                </div>
+                <span id='total_time'>00:00</span>
+            </div>
+            <div class='voice'>
+                <i id='type' class='iconfont'></i>
+                <i id='volume' class='iconfont icon-volume' title='静音'></i>
+                <div id='voice_wrapper' class='range_wrapper'>
+                    <div id='voice_range' class='range'></div>
+                    <div id='voice_circle' class='circle'></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

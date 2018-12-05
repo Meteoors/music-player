@@ -1,0 +1,16 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.0.0",
+    "mime": "^1.3.4",
+    "mz": "^2.4.0"
+  }
+}
